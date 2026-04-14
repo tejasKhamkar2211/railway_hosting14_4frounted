@@ -9,7 +9,7 @@ export default function AddMember() {
   const handleSubmit = async (e: any) => {
     e.preventDefault();
 
-    await fetch("http://localhost:3000/members", {
+    await fetch("https://railwayhosting144backend-production.up.railway.app/members", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ name, phone }),

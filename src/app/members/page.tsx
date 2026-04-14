@@ -6,7 +6,7 @@ export default function Members() {
   const [members, setMembers] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:3000/members")
+    fetch("https://railwayhosting144backend-production.up.railway.app/members")
       .then((res) => res.json())
       .then((data) => setMembers(data));
   }, []);
